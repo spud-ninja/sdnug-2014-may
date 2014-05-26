@@ -1,0 +1,22 @@
+﻿body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.input-group-addon {
+  min-width: 80px;
+  text-align: right;
+}
+.animate.ng-enter {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  position: relative;
+  left: -10px;
+  opacity: 0;
+}
+.animate.ng-enter.ng-enter-active {
+  left: 0;
+  opacity: 1;
+}
+/*# sourceMappingURL=app.css.map */

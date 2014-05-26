@@ -1,0 +1,32 @@
+Demo 1 - Console Hosted: (Not needed for Web Host)
+Install-Package Microsoft.Owin.Hosting
+Install-Package Microsoft.Owin.Host.HttpListener
+
+Demo 1 - Web Hosted: (Not needed for Console Host)
+Install-Package Microsoft.Owin.Host.SystemWeb
+
+Demo 2:
+Install-Package Nancy.Owin
+
+Demo 3:
+Add bootstrap.css
+	http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+Add bootstrap.js
+	http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+Add bootstrap theme
+	http://bootswatch.com/simplex/bootstrap.min.css
+Add font-awesome.css
+	http://fontawesome.io/assets/font-awesome-4.1.0.zip
+Add jquery
+	http://code.jquery.com/jquery-2.1.1.min.js
+
+Demo 4:
+Angular
+	http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js
+Angular Route
+	http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-route.min.js
+Angular Animations
+	http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-animate.min.js
+
+Demo 5
+Install-Package Microsoft.AspNet.SignalR.Core

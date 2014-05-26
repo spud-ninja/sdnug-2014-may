@@ -1,0 +1,26 @@
+﻿@delay: 0.5s;
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.input-group-addon {
+    min-width: 80px;
+    text-align: right;
+}
+
+.animate.ng-enter {
+    -webkit-transition: @delay linear all;
+    -moz-transition: @delay linear all;
+    -o-transition: @delay linear all;
+    transition: @delay linear all;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+}
+
+.animate.ng-enter.ng-enter-active {
+    left: 0;
+    opacity: 1;
+}

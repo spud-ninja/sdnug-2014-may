@@ -1,0 +1,53 @@
+﻿<div class="row">
+    <div class="col-md-8">
+        <table class="table table-condensed table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>Chat Window</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="msg in Chat" class="animate">
+                    <td><span tooltip="{{msg.Time}}">{{msg.Name}}</span>: {{msg.Message}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <form class="form-group form-inline" ng-submit="send()" name="chatForm">
+                            <div class="col-sm-4" style="padding: 5px;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Name</span>
+                                    <input type="text" class="form-control" ng-model="name" required />
+                                </div>
+                            </div>
+                            <div class="col-sm-8" style="padding: 5px;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Message</span>
+                                    <input type="text" class="form-control" ng-model="message" required/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit" ng-disabled="chatForm.$invalid">Send</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table class="table table-condensed table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>Users in Chat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in Users">
+                    <td>{{user.Name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
